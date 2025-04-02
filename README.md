@@ -38,7 +38,7 @@ Install the Backstage plugin backend:
 ```bash
 # points to https://github.com/knative-extensions/backstage-plugins/pull/85
 # find from https://console.cloud.google.com/storage/browser/knative-nightly/backstage-plugins/previous;tab=objects?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22,%22s%22:%5B(%22i%22:%22displayName%22,%22s%22:%221%22)%5D))&authuser=0&prefix=&forceOnObjectsSortingFiltering=true
-kubectl apply -f https://storage.googleapis.com/knative-nightly/backstage-plugins/previous/v20240919-00059a3/eventmesh.yaml
+kubectl apply -f https://storage.googleapis.com/knative-nightly/backstage-plugins/previous/v20250401-722dce9/eventmesh.yaml
 ```
 
 ## Starting up
