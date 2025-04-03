@@ -15,7 +15,7 @@ else
   reset=''
 fi
 
-eventing_version="v1.12.0"
+eventing_version="v1.17.4"
 eventing_url=https://github.com/knative/eventing/releases/download/knative-${eventing_version}
 
 while [[ $# -ne 0 ]]; do

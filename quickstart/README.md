@@ -36,13 +36,12 @@ rules:
     resources:
       - "*"
     verbs:
-      - get
-      - list
-      - create
-      - update
-      - delete
-      - patch
-      - watch
+      - "*"    
+  - nonResourceURLs:
+      - "*"
+    verbs:
+      - "*"        
+
 ---
 apiVersion: v1
 kind: ServiceAccount
@@ -93,7 +92,7 @@ metadata:
 spec:
   serviceAccountName: knative-backstage-demo
   containers:
-  - image: aliok/knative-backstage-demo
+  - image: zoftdev/knative-backstage-demo
     name: knative-backstage-demo
     ports:
     - containerPort: 3000
@@ -169,6 +168,6 @@ kubectl delete namespace knative-backstage-demo
 ## Building the image
 
 ```shell
-docker build . -f quickstart/Dockerfile -t aliok/knative-backstage-demo --platform=linux/amd64
-docker push aliok/knative-backstage-demo
+docker build . -f quickstart/Dockerfile -t zoftdev/knative-backstage-demo --platform=linux/amd64
+docker push zoftdev/knative-backstage-demo
 ```

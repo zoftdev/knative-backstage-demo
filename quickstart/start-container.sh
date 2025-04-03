@@ -30,7 +30,7 @@ kubectl apply -n ${NAMESPACE} -f ./100-manifest/280-all-events-logger.yaml
 kubectl apply -n ${NAMESPACE} -f ./100-manifest/290-payment-event-generator.yaml
 
 echo "Creating Knative event mesh plugin backend"
-kubectl apply -n knative-eventing -f https://storage.googleapis.com/knative-nightly/backstage-plugins/previous/v20240919-00059a3/eventmesh.yaml
+kubectl apply -n knative-eventing -f https://storage.googleapis.com/knative-nightly/backstage-plugins/previous/v20250401-722dce9/eventmesh.yaml
 
 echo "Creating Knative event mesh plugin secret for getting a token"
 kubectl -n knative-backstage-demo create serviceaccount backstage-admin
